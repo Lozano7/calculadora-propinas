@@ -79,7 +79,7 @@ botonPorcentaje.forEach((boton) => {
       propina.innerHTML = datos[0];
       totalPropina.innerHTML = datos[1];
     } else {
-      alert("Complete todos los campos");
+      alert("Complete todos los campos: Efectivo y Numero de Personas");
     }
   });
 });
