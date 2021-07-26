@@ -20,7 +20,9 @@ function calcular(dinero, porcentaje, personas) {
   let subtotal = (efectivo * porcentajes) / 100;
   let propina = subtotal / numeroPersonas;
   let total = efectivo / numeroPersonas + propina;
-  return [propina, total];
+  let propinaDecimal = propina.toFixed(2);
+  let totalDecimal = total.toFixed(2);
+  return [propinaDecimal, totalDecimal];
 }
 function validarCampo(e) {
   var val;
