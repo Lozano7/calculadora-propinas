@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleError.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Calculadora de Propinas</title>
+  </head>
+  <body>
+    <div class="caculadora">
+      <section class="title">
+        <h2 class="titulo_calculadora">Calcular</h2>
+        <h2 class="titulo_calculadora">Propina</h2>
+      </section>
+      <section class="maquina">
+        <div class="contenedor__maquina">
+          <section class="datos datos-pedir">
+            <div class="item">
+              <label for="billete">Efectivo</label>
+              <div class="inputsDatos">
+                <input
+                  name="dinero"
+                  id="billete"
+                  class="dato pedir-datos"
+                  type="text"
+                />
+                <img src="images/icon-dollar.svg" alt="dollar" />
+              </div>
+              <p id="textoE" class="datoError correcto"></p>
+            </div>
+            <div class="item">
+              <label for="bill">Seleccione el % de la propina</label>
+              <div class="inputsBoton">
+                <input class="inputbtn" type="button" value="5%" />
+                <input class="inputbtn" type="button" value="10%" />
+                <input class="inputbtn" type="button" value="15%" />
+                <input class="inputbtn" type="button" value="25%" />
+                <input class="inputbtn" type="button" value="50%" />
+                <input
+                  id="custom"
+                  class="pedir-datos"
+                  type="text"
+                  placeholder="Elegir"
+                />
+              </div>
+            </div>
+            <div class="item">
+              <label for="bill">Numbero de Personas</label>
+              <div class="inputsDatos">
+                <input
+                  name="personas"
+                  id="persona"
+                  class="dato pedir-datos"
+                  type="text"
+                />
+                <img src="images/icon-person.svg" alt="person" />
+              </div>
+              <p id="textoE2" class="datoError correcto"></p>
+            </div>
+          </section>
+          <section class="datos resultadoTotal">
+            <div class="item result">
+              <div class="inputsResultado">
+                <div class="texto">
+                  <label for="">Propina</label>
+                  <p>/ person</p>
+                </div>
+                <div class="resultadoAmount">
+                  <i class="bx bx-dollar resultadoReal"></i>
+                  <div id="propina" class="resultadoReal">0.00</div>
+                </div>
+                <div class="texto">
+                  <label for="">Total Ganancias</label>
+                  <p>/ person</p>
+                </div>
+                <div class="resultadoAmount">
+                  <i class="bx bx-dollar resultadoReal"></i>
+                  <div id="totalPropina" class="resultadoReal">0.00</div>
+                </div>
+              </div>
+              <div class="contenerdor-reset">
+                <input id="reseteo" type="button" value="RESET" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <section class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Anthony Lozano</a>.
+    </section>
+    <script src="js/code.js"></script>
+  </body>
+</html>

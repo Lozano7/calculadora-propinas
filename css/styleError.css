@@ -1,0 +1,20 @@
+.correcto {
+  display: none;
+}
+.datoError {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  color: #f15;
+}
+.borderCorrecto {
+  border: 2px solid #5f6;
+}
+.borderInCorrecto {
+  border: 2px solid #f15;
+}
+.clickeado {
+  background-color: var(--Strong-cyan) !important;
+  color: var(--Very-dark-cyan) !important;
+}
