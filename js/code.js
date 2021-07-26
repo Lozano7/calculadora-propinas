@@ -1,4 +1,5 @@
 const numeros = /^\d{1,}$/;
+const decimal = /^\d*(\.\d{1})?\d{0,1}$/;
 const validar = {
   dolares: false,
   porcentaje: false,
@@ -22,7 +23,13 @@ function calcular(dinero, porcentaje, personas) {
   return [propina, total];
 }
 function validarCampo(e) {
-  if (numeros.test(e.target.value)) {
+  var val;
+  if (e.target.name == "dinero") {
+    val = decimal;
+  } else {
+    val = numeros;
+  }
+  if (val.test(e.target.value)) {
     if (e.target.name == "dinero") {
       e.target.classList.remove("borderInCorrecto");
       e.target.classList.add("borderCorrecto");
