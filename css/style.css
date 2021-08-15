@@ -167,6 +167,9 @@ input:hover {
 #custom {
   display: none;
 }
+#reseteo{
+  padding: 10px;
+}
 @media screen and (min-width: 850px) {
   body {
     height: 100vh;
