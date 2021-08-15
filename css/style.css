@@ -167,9 +167,7 @@ input:hover {
 #custom {
   display: none;
 }
-#reseteo{
-  padding: 10px;
-}
+
 @media screen and (min-width: 850px) {
   body {
     height: 100vh;
@@ -222,5 +220,8 @@ input:hover {
   .attribution {
     font-size: 18px;
     text-align: center;
+  }
+  #reseteo{
+    padding: 10px;
   }
 }
